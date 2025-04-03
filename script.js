@@ -11,9 +11,14 @@ botaoDeAcessibilidade.addEventListener('click',function(){
 
 
 
-    const botaoSelecionado=botaoDeAcessibilidade.getAttribute('aria-expanded')=== 'true';    
+    const botaoSelecionado=botaoDeAcessibilidade.getAttribute('aria-expanded')=== 'true';
+    
+    botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
 
 })
+     const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+     const diminuirFonteBotao = document.getElementById('diminuir-fonte');
+      
+     const alternaConstraste = document.getElementById('alterna-contraste')
 
-
-})
+     })
